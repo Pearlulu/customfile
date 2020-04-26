@@ -267,7 +267,7 @@ function file_video(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<video class="mdui-video-fluid mdui-center" controls>
+	<video class="mdui-video-fluid mdui-center" controls autoplay>
 	  <source src="${url}" type="video/mp4">
 	</video>
 	<br>${playBtn}
@@ -292,7 +292,7 @@ function file_audio(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<audio class="mdui-center" controls>
+	<audio class="mdui-center" controls autoplay>
 	  <source src="${url}"">
 	</audio>
 	<br>
