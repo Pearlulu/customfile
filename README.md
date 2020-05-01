@@ -1,1 +1,1 @@
-Some modified static files
+Some modified or fixed files
