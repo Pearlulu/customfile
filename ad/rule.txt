@@ -1,0 +1,11 @@
+youtube.com,youtube-nocookie.com##+js(set, Object.prototype.adPlacements, undefined)
+youtube.com,youtube-nocookie.com##+js(set, Object.prototype.playerAds, undefined)
+
+m.youku.com,v.youku.com##+js(set, Object.prototype.ad.VAL, [])
+
+iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+
+douyu.com###js-player-guessgame > div.GuessGameMiniPanelB-wrapper.is-show
+douyu.com###js-player-toolbar > div.PlayerToolbar > div.SuperFansBubble.is-super:nth-child(4)
+
+||bbs.pcbeta.com/data/cache/*.js
