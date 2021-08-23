@@ -1,3 +1,9 @@
+[Adblock Plus 2.0]
+! Title: Rikka rule
+! Version: 202108231
+! Expires: 365 days
+! Homepage: https://github.com/Pearlulu
+
 youtube.com,youtube-nocookie.com##+js(set, Object.prototype.adPlacements, undefined)
 youtube.com,youtube-nocookie.com##+js(set, Object.prototype.playerAds, undefined)
 
