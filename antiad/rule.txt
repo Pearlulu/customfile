@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Rikka rule
-! Version: 202108231
+! Version: 202108251
 ! Expires: 365 days
 ! Homepage: https://github.com/Pearlulu
 
@@ -14,4 +14,4 @@ iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 douyu.com###js-player-guessgame > div.GuessGameMiniPanelB-wrapper.is-show
 douyu.com###js-player-toolbar > div.PlayerToolbar > div.SuperFansBubble.is-super:nth-child(4)
 
-||bbs.pcbeta.com/data/cache/*.js
+pcbeta.com##+js(aopr, Node.prototype.insertBefore)
