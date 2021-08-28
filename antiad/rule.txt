@@ -1,17 +1,28 @@
 [Adblock Plus 2.0]
 ! Title: Rikka rule
-! Version: 202108251
+! Version: 202108281
 ! Expires: 365 days
-! Homepage: https://github.com/Pearlulu
+! Homepage: https://github.com/Pearlulu/customfile/tree/master/antiad
 
-youtube.com,youtube-nocookie.com##+js(set, Object.prototype.adPlacements, undefined)
-youtube.com,youtube-nocookie.com##+js(set, Object.prototype.playerAds, undefined)
+! Youtube
+youtube.com##.masthead-ad-control,.ad-div,.pyv-afc-ads-container
+youtube.com###promotion-shelf
+*_ad_$media,domain=youtube.com,3p
+youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
+youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+youtube.com##ytd-display-ad-renderer:upward(ytd-rich-item-renderer)
 
+!Youku
 m.youku.com,v.youku.com##+js(set, Object.prototype.ad.VAL, [])
 
+!iqiyi
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 
+!douyu
 douyu.com###js-player-guessgame > div.GuessGameMiniPanelB-wrapper.is-show
 douyu.com###js-player-toolbar > div.PlayerToolbar > div.SuperFansBubble.is-super:nth-child(4)
 
+!pcbeta
 pcbeta.com##+js(aopr, Node.prototype.insertBefore)
